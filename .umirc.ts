@@ -1,12 +1,9 @@
 import { defineConfig } from "umi";
+import router from "./config/router";
 
 export default defineConfig({
-  routes: [
-    { path: "/", component: "index" },
-    { path: "/docs", component: "docs" },
-  ],
-
+  plugins: ["@umijs/plugins/dist/tailwindcss"],
+  routes: router,
   npmClient: "pnpm",
   tailwindcss: {},
-  plugins: ["@umijs/plugins/dist/tailwindcss"],
 });
