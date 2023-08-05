@@ -1,10 +1,10 @@
 import React, { memo } from "react";
-import Button from "@/components/Button";
+import StudyItem from "@/components/StudyItem";
 
 const Home = memo(() => {
   return (
-    <div className="h-screen bg-gradient-to-tr from-violet-800 text-white justify-center items-center flex">
-      <Button>确定</Button>
+    <div className="w-10/12 mx-auto">
+      <StudyItem />
     </div>
   );
 });
